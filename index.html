@@ -1,0 +1,1001 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dicionário Online de Tecnologia</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom right, #eef2f3, #8e9eab);
+            color: #333;
+        }
+
+        header {
+            background: #003f7f;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        header p {
+            margin-top: 0.5rem;
+            font-size: 1.2rem;
+        }
+
+        .tabs {
+            display: flex;
+            justify-content: center;
+            background: #f0f0f0;
+            padding: 0.5rem 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .tabs button {
+            background: none;
+            border: none;
+            padding: 1rem 2rem;
+            cursor: pointer;
+            font-size: 1rem;
+            font-weight: bold;
+            color: #333;
+            border-bottom: 2px solid transparent;
+            transition: color 0.3s, border-bottom 0.3s;
+        }
+
+        .tabs button:hover {
+            color: #003f7f;
+        }
+
+        .tabs button.active {
+            color: #003f7f;
+            border-bottom: 2px solid #003f7f;
+        }
+
+        .content {
+            display: none;
+            padding: 2rem;
+            max-width: 1200px;
+            margin: 2rem auto;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .content.active {
+            display: block;
+        }
+
+        h2 {
+            color: #003f7f;
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .term {
+            margin: 1rem 0;
+            padding: 1rem;
+            background: #f9f9f9;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .term h3 {
+            margin: 0;
+            color: #333;
+            font-size: 1.3rem;
+        }
+
+        .term p {
+            margin: 0.5rem 0 0;
+            font-size: 1rem;
+            color: #555;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1.5rem;
+            background-color: #003f7f;
+            color: white;
+            font-size: 0.9rem;
+            margin-top: 2rem;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Dicionário Online de Tecnologia</h1>
+        <p>Explore termos do universo da tecnologia, organizados por categorias ou listados completamente.</p>
+    </header>
+    <div class="tabs">
+        <button class="tab-button active" data-tab="redes">Redes</button>
+        <button class="tab-button" data-tab="programacao">Programação</button>
+        <button class="tab-button" data-tab="seguranca">Segurança</button>
+        <button class="tab-button" data-tab="hardware">Hardware</button>
+        <button class="tab-button" data-tab="completos">Termos Completos</button>
+    </div>
+    <!-- Conteúdo Original -->
+    <div id="redes" class="content active">
+        <h2>Redes</h2>
+        <div class="term">
+            <h3>DNS (Sistema de Nomes de Domínio)</h3>
+            <p>Sistema que traduz nomes de sites para endereços IP.</p>
+        </div>
+        <div class="term">
+            <h3>Ethernet</h3>
+            <p>Tecnologia usada para conectar dispositivos a uma rede local via cabo.</p>
+        </div>
+        <div class="term">
+            <h3>Firewall</h3>
+            <p>Sistema de segurança que monitora e controla o tráfego de rede.</p>
+        </div>
+        <div class="term">
+            <h3>Mesh Network</h3>
+            <p>Rede onde cada dispositivo se conecta a outros, formando uma malha de comunicação.</p>
+        </div>
+        <div class="term">
+            <h3>VPN (Rede Privada Virtual)</h3>
+            <p>Tecnologia que cria uma conexão segura e privada entre o dispositivo e a internet.</p>
+        </div>
+    </div>
+    <div id="programacao" class="content">
+        <h2>Programação</h2>
+        <div class="term">
+            <h3>API (Interface de Programação de Aplicativos)</h3>
+            <p>Conjunto de regras que permite a comunicação entre sistemas.</p>
+        </div>
+        <div class="term">
+            <h3>Compilador</h3>
+            <p>Programa que traduz código fonte em linguagem de máquina.</p>
+        </div>
+        <div class="term">
+            <h3>Framework</h3>
+            <p>Estrutura pré-definida para facilitar o desenvolvimento de aplicativos ou sistemas.</p>
+        </div>
+        <div class="term">
+            <h3>Git</h3>
+            <p>Sistema de controle de versão para rastrear mudanças no código.</p>
+        </div>
+        <div class="term">
+            <h3>Singleton</h3>
+            <p>Padrão de design que garante que uma classe tenha apenas uma instância.</p>
+        </div>
+    </div>
+    <div id="seguranca" class="content">
+        <h2>Segurança</h2>
+        <div class="term">
+            <h3>Criptografia</h3>
+            <p>Método de proteger informações transformando-as em código.</p>
+        </div>
+        <div class="term">
+            <h3>Phishing</h3>
+            <p>Tentativa de enganar usuários para roubar informações pessoais.</p>
+        </div>
+        <div class="term">
+            <h3>Token</h3>
+            <p>Código usado para autenticação e segurança.</p>
+        </div>
+        <div class="term">
+            <h3>Zero-Day</h3>
+            <p>Vulnerabilidade de software descoberta antes de ser corrigida.</p>
+        </div>
+        <div class="term">
+            <h3>Botnet</h3>
+            <p>Rede de computadores infectados controlados por hackers.</p>
+        </div>
+    </div>
+    <div id="hardware" class="content">
+        <h2>Hardware</h2>
+        <div class="term">
+            <h3>CPU (Unidade Central de Processamento)</h3>
+            <p>O "cérebro" do computador que executa comandos e processa dados.</p>
+        </div>
+        <div class="term">
+            <h3>GPU (Unidade de Processamento Gráfico)</h3>
+            <p>Componente especializado em processar gráficos e vídeos.</p>
+        </div>
+        <div class="term">
+            <h3>Memória RAM</h3>
+            <p>Tipo de memória temporária usada para armazenar dados enquanto são processados.</p>
+        </div>
+        <div class="term">
+            <h3>Microchip</h3>
+            <p>Componente eletrônico miniaturizado que executa funções computacionais.</p>
+        </div>
+        <div class="term">
+            <h3>SSD (Unidade de Estado Sólido)</h3>
+            <p>Dispositivo de armazenamento mais rápido e confiável que o HDD.</p>
+        </div>
+    </div>
+
+    <!-- Novo Conteúdo: Termos Completos -->
+    <div id="completos" class="content">
+        <h2>Termos Completos</h2>
+        <!-- Abaixo, todos os 150 termos fornecidos, com "O que é" e "Exemplo" quando aplicável. -->
+
+        <div class="term">
+            <h3>1. Hardware</h3>
+            <p><strong>O que é:</strong> Componentes físicos de um computador ou dispositivo eletrônico, como monitor, teclado, mouse, processador, etc.</p>
+            <p><strong>Exemplo:</strong> O celular que você segura é um exemplo de hardware.</p>
+        </div>
+        <div class="term">
+            <h3>2. Software</h3>
+            <p><strong>O que é:</strong> Programas e sistemas que executam tarefas em dispositivos eletrônicos.</p>
+            <p><strong>Exemplo:</strong> Aplicativos como WhatsApp ou Word são softwares.</p>
+        </div>
+        <div class="term">
+            <h3>3. Sistema Operacional (SO)</h3>
+            <p><strong>O que é:</strong> O software principal que gerencia o hardware e outros programas de um dispositivo.</p>
+            <p><strong>Exemplo:</strong> Windows, macOS, Android, iOS.</p>
+        </div>
+        <div class="term">
+            <h3>4. Navegador</h3>
+            <p><strong>O que é:</strong> Programa usado para acessar a internet.</p>
+            <p><strong>Exemplo:</strong> Google Chrome, Safari, Mozilla Firefox.</p>
+        </div>
+        <div class="term">
+            <h3>5. Wi-Fi</h3>
+            <p><strong>O que é:</strong> Tecnologia que permite a conexão à internet sem cabos.</p>
+            <p><strong>Exemplo:</strong> Redes sem fio usadas em casa, no trabalho ou em locais públicos.</p>
+        </div>
+        <div class="term">
+            <h3>6. Nuvem (Cloud)</h3>
+            <p><strong>O que é:</strong> Armazenamento e acesso de dados pela internet em vez de usar um dispositivo físico.</p>
+            <p><strong>Exemplo:</strong> Google Drive, iCloud.</p>
+        </div>
+        <div class="term">
+            <h3>7. Inteligência Artificial (IA)</h3>
+            <p><strong>O que é:</strong> Tecnologia que simula a inteligência humana em máquinas.</p>
+            <p><strong>Exemplo:</strong> Assistentes virtuais como Alexa e ChatGPT.</p>
+        </div>
+        <div class="term">
+            <h3>8. Realidade Virtual (VR)</h3>
+            <p><strong>O que é:</strong> Ambiente simulado criado por computador, acessado com dispositivos como óculos VR.</p>
+            <p><strong>Exemplo:</strong> Jogos imersivos ou tours virtuais.</p>
+        </div>
+        <div class="term">
+            <h3>9. Realidade Aumentada (AR)</h3>
+            <p><strong>O que é:</strong> Tecnologia que adiciona elementos digitais ao mundo real, normalmente através de câmeras.</p>
+            <p><strong>Exemplo:</strong> Filtros do Instagram ou jogos como Pokémon GO.</p>
+        </div>
+        <div class="term">
+            <h3>10. Algoritmo</h3>
+            <p><strong>O que é:</strong> Conjunto de regras ou passos para resolver um problema ou realizar uma tarefa.</p>
+            <p><strong>Exemplo:</strong> Como o YouTube escolhe vídeos para recomendar a você.</p>
+        </div>
+        <div class="term">
+            <h3>11. Rede Social</h3>
+            <p><strong>O que é:</strong> Plataformas digitais para interação e compartilhamento de conteúdo.</p>
+            <p><strong>Exemplo:</strong> Facebook, Instagram, TikTok.</p>
+        </div>
+        <div class="term">
+            <h3>12. URL</h3>
+            <p><strong>O que é:</strong> Endereço de um site na internet.</p>
+            <p><strong>Exemplo:</strong> https://www.google.com é uma URL.</p>
+        </div>
+        <div class="term">
+            <h3>13. Servidor</h3>
+            <p><strong>O que é:</strong> Computador ou sistema que fornece recursos, dados ou serviços a outros computadores.</p>
+            <p><strong>Exemplo:</strong> O Netflix usa servidores para transmitir filmes.</p>
+        </div>
+        <div class="term">
+            <h3>14. Banco de Dados</h3>
+            <p><strong>O que é:</strong> Local onde informações são armazenadas e organizadas para fácil acesso.</p>
+            <p><strong>Exemplo:</strong> Cadastros de clientes em um sistema de loja.</p>
+        </div>
+        <div class="term">
+            <h3>15. Criptomoeda</h3>
+            <p><strong>O que é:</strong> Moeda digital que usa criptografia para segurança.</p>
+            <p><strong>Exemplo:</strong> Bitcoin, Ethereum.</p>
+        </div>
+        <div class="term">
+            <h3>16. Blockchain</h3>
+            <p><strong>O que é:</strong> Tecnologia usada para registrar transações digitais de forma segura e descentralizada.</p>
+            <p><strong>Exemplo:</strong> Base de funcionamento das criptomoedas.</p>
+        </div>
+        <div class="term">
+            <h3>17. Código-Fonte</h3>
+            <p><strong>O que é:</strong> Conjunto de instruções escritas em linguagem de programação que define como um software funciona.</p>
+            <p><strong>Exemplo:</strong> Os aplicativos são criados com código-fonte.</p>
+        </div>
+        <div class="term">
+            <h3>18. Inteligência Coletiva</h3>
+            <p><strong>O que é:</strong> Compartilhamento de conhecimento entre um grupo de pessoas usando tecnologia.</p>
+            <p><strong>Exemplo:</strong> Wikipedia, fóruns online.</p>
+        </div>
+        <div class="term">
+            <h3>19. Segurança Cibernética</h3>
+            <p><strong>O que é:</strong> Práticas e ferramentas para proteger dispositivos e redes contra ataques e acessos não autorizados.</p>
+            <p><strong>Exemplo:</strong> Uso de antivírus ou autenticação em dois fatores.</p>
+        </div>
+        <div class="term">
+            <h3>20. Internet das Coisas (IoT)</h3>
+            <p><strong>O que é:</strong> Conexão de dispositivos físicos à internet para coletar e compartilhar dados.</p>
+            <p><strong>Exemplo:</strong> Geladeiras inteligentes ou lâmpadas controladas por aplicativos.</p>
+        </div>
+        <div class="term">
+            <h3>21. Download e Upload</h3>
+            <p><strong>Download:</strong> Transferir arquivos da internet para seu dispositivo.</p>
+            <p><strong>Upload:</strong> Enviar arquivos do seu dispositivo para a internet.</p>
+            <p><strong>Exemplo:</strong> Baixar uma música (download) e postar uma foto no Instagram (upload).</p>
+        </div>
+        <div class="term">
+            <h3>22. Spam</h3>
+            <p><strong>O que é:</strong> Mensagens indesejadas ou irrelevantes enviadas para muitas pessoas, geralmente por e-mail.</p>
+            <p><strong>Exemplo:</strong> Propagandas excessivas no seu e-mail.</p>
+        </div>
+        <div class="term">
+            <h3>23. Malware</h3>
+            <p><strong>O que é:</strong> Software malicioso projetado para danificar ou acessar informações de um sistema.</p>
+            <p><strong>Exemplo:</strong> Vírus de computador.</p>
+        </div>
+        <div class="term">
+            <h3>24. Bug</h3>
+            <p><strong>O que é:</strong> Erro ou falha em um software ou sistema.</p>
+            <p><strong>Exemplo:</strong> Quando um aplicativo fecha sozinho ou não responde.</p>
+        </div>
+        <div class="term">
+            <h3>25. Inteligência de Dados (Big Data)</h3>
+            <p><strong>O que é:</strong> Análise de grandes volumes de dados para obter informações úteis.</p>
+            <p><strong>Exemplo:</strong> Empresas usam Big Data para entender o comportamento dos clientes.</p>
+        </div>
+        <div class="term">
+            <h3>26. Processador (CPU)</h3>
+            <p><strong>O que é:</strong> O "cérebro" do computador que executa comandos e processa dados.</p>
+            <p><strong>Exemplo:</strong> Intel Core i7, AMD Ryzen.</p>
+        </div>
+        <div class="term">
+            <h3>27. Memória RAM</h3>
+            <p><strong>O que é:</strong> Tipo de memória temporária usada para armazenar dados enquanto são processados.</p>
+            <p><strong>Exemplo:</strong> Mais RAM significa que você pode abrir mais aplicativos sem lentidão.</p>
+        </div>
+        <div class="term">
+            <h3>28. Disco Rígido (HDD) e SSD</h3>
+            <p><strong>O que é:</strong> Dispositivos de armazenamento de dados. SSDs são mais rápidos e confiáveis que HDDs.</p>
+            <p><strong>Exemplo:</strong> Armazenar fotos e vídeos no computador.</p>
+        </div>
+        <div class="term">
+            <h3>29. API (Interface de Programação de Aplicativos)</h3>
+            <p><strong>O que é:</strong> Conjunto de regras que permite que diferentes sistemas se comuniquem.</p>
+            <p><strong>Exemplo:</strong> O Google Maps API permite integrar mapas em sites.</p>
+        </div>
+        <div class="term">
+            <h3>30. Firmware</h3>
+            <p><strong>O que é:</strong> Software embutido em hardware que controla seu funcionamento.</p>
+            <p><strong>Exemplo:</strong> O firmware de uma impressora garante que ela funcione corretamente.</p>
+        </div>
+        <div class="term">
+            <h3>31. Open Source (Código Aberto)</h3>
+            <p><strong>O que é:</strong> Software cujo código-fonte é público e pode ser modificado por qualquer pessoa.</p>
+            <p><strong>Exemplo:</strong> O sistema operacional Linux é open source.</p>
+        </div>
+        <div class="term">
+            <h3>32. Backend</h3>
+            <p><strong>O que é:</strong> Parte "invisível" de um sistema, onde a lógica e os dados são processados.</p>
+            <p><strong>Exemplo:</strong> Os servidores que mantêm um site funcionando.</p>
+        </div>
+        <div class="term">
+            <h3>33. Frontend</h3>
+            <p><strong>O que é:</strong> Parte "visível" e interativa de um sistema que o usuário acessa.</p>
+            <p><strong>Exemplo:</strong> Design e botões em uma página web.</p>
+        </div>
+        <div class="term">
+            <h3>34. Cache</h3>
+            <p><strong>O que é:</strong> Memória temporária que armazena dados usados com frequência para acesso mais rápido.</p>
+            <p><strong>Exemplo:</strong> Seu navegador salva imagens de sites para carregar mais rápido na próxima visita.</p>
+        </div>
+        <div class="term">
+            <h3>35. Deep Web</h3>
+            <p><strong>O que é:</strong> Parte da internet não acessível por mecanismos de busca padrão.</p>
+            <p><strong>Exemplo:</strong> Bancos de dados privados ou sites protegidos por login.</p>
+        </div>
+        <div class="term">
+            <h3>36. Dark Web</h3>
+            <p><strong>O que é:</strong> Subconjunto da Deep Web, acessado com softwares específicos como Tor, geralmente associado a atividades ilegais.</p>
+            <p><strong>Exemplo:</strong> Não recomendado para usuários comuns.</p>
+        </div>
+        <div class="term">
+            <h3>37. Data Mining</h3>
+            <p><strong>O que é:</strong> Processo de analisar grandes volumes de dados para descobrir padrões ou tendências.</p>
+            <p><strong>Exemplo:</strong> Empresas analisam compras de clientes para oferecer promoções personalizadas.</p>
+        </div>
+        <div class="term">
+            <h3>38. Machine Learning (Aprendizado de Máquina)</h3>
+            <p><strong>O que é:</strong> Subcampo da IA onde máquinas aprendem a realizar tarefas sem serem programadas diretamente.</p>
+            <p><strong>Exemplo:</strong> Sistemas de recomendação como o Netflix.</p>
+        </div>
+        <div class="term">
+            <h3>39. Criptografia</h3>
+            <p><strong>O que é:</strong> Método de proteger informações transformando-as em código.</p>
+            <p><strong>Exemplo:</strong> Transações bancárias online são criptografadas para segurança.</p>
+        </div>
+        <div class="term">
+            <h3>40. DNS (Sistema de Nomes de Domínio)</h3>
+            <p><strong>O que é:</strong> Sistema que traduz nomes de sites (ex.: google.com) para endereços IP.</p>
+            <p><strong>Exemplo:</strong> Sem DNS, seria necessário digitar o IP 8.8.8.8 em vez de "google.com".</p>
+        </div>
+        <div class="term">
+            <h3>41. VPN (Rede Privada Virtual)</h3>
+            <p><strong>O que é:</strong> Tecnologia que cria uma conexão segura e privada entre seu dispositivo e a internet.</p>
+            <p><strong>Exemplo:</strong> Usada para proteger dados em redes Wi-Fi públicas.</p>
+        </div>
+        <div class="term">
+            <h3>42. Pixel</h3>
+            <p><strong>O que é:</strong> Menor unidade de uma imagem digital.</p>
+            <p><strong>Exemplo:</strong> Uma tela 1920x1080 tem 2.073.600 pixels.</p>
+        </div>
+        <div class="term">
+            <h3>43. DPI (Pontos por Polegada)</h3>
+            <p><strong>O que é:</strong> Medida de resolução usada em imagens e impressoras.</p>
+            <p><strong>Exemplo:</strong> Fotos de alta qualidade geralmente têm 300 DPI.</p>
+        </div>
+        <div class="term">
+            <h3>44. Driver</h3>
+            <p><strong>O que é:</strong> Software que permite que o sistema operacional se comunique com hardware específico.</p>
+            <p><strong>Exemplo:</strong> Driver de impressora para conectar ao computador.</p>
+        </div>
+        <div class="term">
+            <h3>45. IoT Gateway</h3>
+            <p><strong>O que é:</strong> Dispositivo que conecta sensores e dispositivos IoT à internet.</p>
+            <p><strong>Exemplo:</strong> Um roteador IoT que controla luzes e termostatos inteligentes.</p>
+        </div>
+        <div class="term">
+            <h3>46. Token</h3>
+            <p><strong>O que é:</strong> Código usado para autenticação e segurança.</p>
+            <p><strong>Exemplo:</strong> Tokens são enviados por SMS para login seguro.</p>
+        </div>
+        <div class="term">
+            <h3>47. Data Center</h3>
+            <p><strong>O que é:</strong> Local físico onde servidores armazenam e processam dados.</p>
+            <p><strong>Exemplo:</strong> Empresas como Google e Amazon possuem enormes data centers.</p>
+        </div>
+        <div class="term">
+            <h3>48. 5G</h3>
+            <p><strong>O que é:</strong> Quinta geração de redes móveis, com maior velocidade e menor latência.</p>
+            <p><strong>Exemplo:</strong> Permite streaming de vídeos em alta definição sem interrupções.</p>
+        </div>
+        <div class="term">
+            <h3>49. SaaS (Software como Serviço)</h3>
+            <p><strong>O que é:</strong> Modelo de software acessado pela internet, geralmente por assinatura.</p>
+            <p><strong>Exemplo:</strong> Microsoft Office 365, Google Workspace.</p>
+        </div>
+        <div class="term">
+            <h3>50. Phishing</h3>
+            <p><strong>O que é:</strong> Tentativa de enganar usuários para roubar informações pessoais.</p>
+            <p><strong>Exemplo:</strong> E-mails falsos que imitam bancos pedindo suas senhas.</p>
+        </div>
+        <div class="term">
+            <h3>51. Hotspot</h3>
+            <p><strong>O que é:</strong> Ponto de acesso Wi-Fi compartilhado, geralmente público.</p>
+            <p><strong>Exemplo:</strong> Wi-Fi gratuito em aeroportos.</p>
+        </div>
+        <div class="term">
+            <h3>52. Cookies</h3>
+            <p><strong>O que é:</strong> Pequenos arquivos armazenados por sites no seu navegador para lembrar informações.</p>
+            <p><strong>Exemplo:</strong> Um site que lembra sua preferência de idioma.</p>
+        </div>
+        <div class="term">
+            <h3>53. Renderização</h3>
+            <p><strong>O que é:</strong> Processo de gerar imagens ou vídeos a partir de modelos digitais.</p>
+            <p><strong>Exemplo:</strong> Usado na criação de gráficos 3D em jogos e filmes.</p>
+        </div>
+        <div class="term">
+            <h3>54. HTTP e HTTPS</h3>
+            <p><strong>O que é:</strong> Protocolos de comunicação para acessar sites. O "S" no HTTPS significa que a conexão é segura.</p>
+            <p><strong>Exemplo:</strong> Sites de banco usam HTTPS.</p>
+        </div>
+        <div class="term">
+            <h3>55. Ping</h3>
+            <p><strong>O que é:</strong> Teste usado para medir a latência (tempo de resposta) entre dois dispositivos na rede.</p>
+            <p><strong>Exemplo:</strong> Jogos online usam "ping" para medir atrasos.</p>
+        </div>
+        <div class="term">
+            <h3>56. IoT Analytics</h3>
+            <p><strong>O que é:</strong> Análise de dados coletados por dispositivos IoT.</p>
+            <p><strong>Exemplo:</strong> Sensores inteligentes monitorando consumo de energia.</p>
+        </div>
+        <div class="term">
+            <h3>57. Metadados</h3>
+            <p><strong>O que é:</strong> Informações sobre dados, como autor, data de criação e formato.</p>
+            <p><strong>Exemplo:</strong> Uma foto digital inclui metadados como local e data.</p>
+        </div>
+        <div class="term">
+            <h3>58. Firewall</h3>
+            <p><strong>O que é:</strong> Sistema de segurança que monitora e controla o tráfego de rede, bloqueando acessos não autorizados.</p>
+            <p><strong>Exemplo:</strong> Empresas usam firewalls para proteger suas redes internas.</p>
+        </div>
+        <div class="term">
+            <h3>59. Bit e Byte</h3>
+            <p><strong>Bit:</strong> Menor unidade de dados em informática, representando 0 ou 1.</p>
+            <p><strong>Byte:</strong> Conjunto de 8 bits.</p>
+            <p><strong>Exemplo:</strong> Um arquivo de texto pode ter 2 KB (2.000 bytes).</p>
+        </div>
+        <div class="term">
+            <h3>60. BIOS</h3>
+            <p><strong>O que é:</strong> Sistema básico que inicia o hardware do computador e carrega o sistema operacional.</p>
+            <p><strong>Exemplo:</strong> Quando você liga o computador, o BIOS prepara o hardware para o SO.</p>
+        </div>
+        <div class="term">
+            <h3>61. SDK (Kit de Desenvolvimento de Software)</h3>
+            <p><strong>O que é:</strong> Conjunto de ferramentas e bibliotecas para criar aplicativos em uma plataforma específica.</p>
+            <p><strong>Exemplo:</strong> O SDK do Android é usado para criar aplicativos móveis.</p>
+        </div>
+        <div class="term">
+            <h3>62. Latência</h3>
+            <p><strong>O que é:</strong> Tempo que um dado leva para viajar de um ponto a outro em uma rede.</p>
+            <p><strong>Exemplo:</strong> Jogos online podem ter atrasos devido à alta latência.</p>
+        </div>
+        <div class="term">
+            <h3>63. Overclock</h3>
+            <p><strong>O que é:</strong> Ato de aumentar a velocidade de componentes do computador, além do recomendado.</p>
+            <p><strong>Exemplo:</strong> Gamers usam overclock para melhorar o desempenho.</p>
+        </div>
+        <div class="term">
+            <h3>64. FTP (Protocolo de Transferência de Arquivos)</h3>
+            <p><strong>O que é:</strong> Protocolo usado para transferir arquivos entre computadores.</p>
+            <p><strong>Exemplo:</strong> Utilizado para carregar sites em servidores.</p>
+        </div>
+        <div class="term">
+            <h3>65. Router (Roteador)</h3>
+            <p><strong>O que é:</strong> Dispositivo que distribui a conexão de internet para outros dispositivos.</p>
+            <p><strong>Exemplo:</strong> O roteador Wi-Fi que você usa em casa.</p>
+        </div>
+        <div class="term">
+            <h3>66. Ethernet</h3>
+            <p><strong>O que é:</strong> Tecnologia usada para conectar dispositivos a uma rede local (LAN) via cabo.</p>
+            <p><strong>Exemplo:</strong> Computadores de escritório usam cabos Ethernet.</p>
+        </div>
+        <div class="term">
+            <h3>67. DNS Spoofing</h3>
+            <p><strong>O que é:</strong> Ataque que redireciona usuários para sites falsos, alterando informações do DNS.</p>
+            <p><strong>Exemplo:</strong> Hackers podem redirecionar você para um site falso que imita seu banco.</p>
+        </div>
+        <div class="term">
+            <h3>68. Virtualização</h3>
+            <p><strong>O que é:</strong> Criação de versões virtuais de dispositivos ou recursos, como servidores ou sistemas.</p>
+            <p><strong>Exemplo:</strong> Rodar Windows em um Mac via máquina virtual.</p>
+        </div>
+        <div class="term">
+            <h3>69. Proxy</h3>
+            <p><strong>O que é:</strong> Servidor intermediário entre o usuário e a internet, usado para filtrar ou proteger conexões.</p>
+            <p><strong>Exemplo:</strong> Escolas usam proxies para bloquear sites não autorizados.</p>
+        </div>
+        <div class="term">
+            <h3>70. QR Code</h3>
+            <p><strong>O que é:</strong> Código bidimensional escaneável para acessar informações ou links.</p>
+            <p><strong>Exemplo:</strong> Usado para pagamentos por aproximação.</p>
+        </div>
+        <div class="term">
+            <h3>71. Kernel</h3>
+            <p><strong>O que é:</strong> Parte central de um sistema operacional que gerencia recursos do hardware.</p>
+            <p><strong>Exemplo:</strong> O kernel do Linux é usado em muitos sistemas.</p>
+        </div>
+        <div class="term">
+            <h3>72. Load Balancer (Balanceador de Carga)</h3>
+            <p><strong>O que é:</strong> Dispositivo ou software que distribui tráfego entre vários servidores.</p>
+            <p><strong>Exemplo:</strong> Grandes sites usam load balancers para lidar com milhões de acessos.</p>
+        </div>
+        <div class="term">
+            <h3>73. CLI (Interface de Linha de Comando)</h3>
+            <p><strong>O que é:</strong> Método de interagir com um computador usando comandos de texto.</p>
+            <p><strong>Exemplo:</strong> Desenvolvedores usam o terminal Linux.</p>
+        </div>
+        <div class="term">
+            <h3>74. GPU (Unidade de Processamento Gráfico)</h3>
+            <p><strong>O que é:</strong> Componente especializado em processar gráficos e vídeos.</p>
+            <p><strong>Exemplo:</strong> Uma NVIDIA GeForce para jogos.</p>
+        </div>
+        <div class="term">
+            <h3>75. IP Público e IP Privado</h3>
+            <p><strong>IP Público:</strong> Endereço usado na internet.</p>
+            <p><strong>IP Privado:</strong> Endereço usado em redes locais.</p>
+            <p><strong>Exemplo:</strong> Seu roteador atribui um IP privado ao seu celular.</p>
+        </div>
+        <div class="term">
+            <h3>76. Tokenização</h3>
+            <p><strong>O que é:</strong> Processo de dividir texto em partes menores (palavras/frases).</p>
+            <p><strong>Exemplo:</strong> Usado em processamento de linguagem natural.</p>
+        </div>
+        <div class="term">
+            <h3>77. Microchip</h3>
+            <p><strong>O que é:</strong> Componente eletrônico miniaturizado com funções computacionais.</p>
+            <p><strong>Exemplo:</strong> Chips em smartphones, cartões bancários, IoT.</p>
+        </div>
+        <div class="term">
+            <h3>78. SEO (Otimização para Motores de Busca)</h3>
+            <p><strong>O que é:</strong> Técnicas para melhorar a posição de sites em resultados de busca.</p>
+            <p><strong>Exemplo:</strong> Usar palavras-chave para aparecer no Google.</p>
+        </div>
+        <div class="term">
+            <h3>79. RAM Virtual</h3>
+            <p><strong>O que é:</strong> Parte do armazenamento usada como RAM quando a RAM real está cheia.</p>
+            <p><strong>Exemplo:</strong> Sistemas criam arquivos de troca (swap).</p>
+        </div>
+        <div class="term">
+            <h3>80. JSON (JavaScript Object Notation)</h3>
+            <p><strong>O que é:</strong> Formato leve para troca de dados entre sistemas.</p>
+            <p><strong>Exemplo:</strong> APIs retornam dados em JSON.</p>
+        </div>
+        <div class="term">
+            <h3>81. WebSocket</h3>
+            <p><strong>O que é:</strong> Protocolo para comunicação bidirecional em tempo real entre navegador e servidor.</p>
+            <p><strong>Exemplo:</strong> Usado em chats online.</p>
+        </div>
+        <div class="term">
+            <h3>82. Data Lake</h3>
+            <p><strong>O que é:</strong> Repositório que armazena dados em formato bruto e não estruturado.</p>
+            <p><strong>Exemplo:</strong> Empresas guardam dados de sensores IoT.</p>
+        </div>
+        <div class="term">
+            <h3>83. Edge Computing</h3>
+            <p><strong>O que é:</strong> Processamento de dados próximo da fonte para reduzir latência.</p>
+            <p><strong>Exemplo:</strong> Câmeras inteligentes processam dados localmente.</p>
+        </div>
+        <div class="term">
+            <h3>84. RAID</h3>
+            <p><strong>O que é:</strong> Método de combinar múltiplos discos para redundância/desempenho.</p>
+            <p><strong>Exemplo:</strong> Usado em servidores para backups.</p>
+        </div>
+        <div class="term">
+            <h3>85. Worm (Vírus de Rede)</h3>
+            <p><strong>O que é:</strong> Malware que se replica automaticamente em redes.</p>
+            <p><strong>Exemplo:</strong> Worms podem espalhar ransomware.</p>
+        </div>
+        <div class="term">
+            <h3>86. Deepfake</h3>
+            <p><strong>O que é:</strong> Vídeos ou áudios falsos criados por IA.</p>
+            <p><strong>Exemplo:</strong> Vídeos simulando celebridades.</p>
+        </div>
+        <div class="term">
+            <h3>87. PaaS (Plataforma como Serviço)</h3>
+            <p><strong>O que é:</strong> Modelo de nuvem que oferece plataforma para desenvolvimento de aplicativos.</p>
+            <p><strong>Exemplo:</strong> Heroku, Google App Engine.</p>
+        </div>
+        <div class="term">
+            <h3>88. CLI Bot</h3>
+            <p><strong>O que é:</strong> Ferramenta automatizada que executa tarefas via linha de comando.</p>
+            <p><strong>Exemplo:</strong> Um bot CLI pode organizar arquivos.</p>
+        </div>
+        <div class="term">
+            <h3>89. Microcontrolador</h3>
+            <p><strong>O que é:</strong> Pequeno computador em um único chip que controla dispositivos.</p>
+            <p><strong>Exemplo:</strong> Arduino e Raspberry Pi.</p>
+        </div>
+        <div class="term">
+            <h3>90. Compilador</h3>
+            <p><strong>O que é:</strong> Programa que traduz código fonte em linguagem de máquina.</p>
+            <p><strong>Exemplo:</strong> O GCC compila código C.</p>
+        </div>
+        <div class="term">
+            <h3>91. Shell</h3>
+            <p><strong>O que é:</strong> Interface para interagir com o sistema operacional.</p>
+            <p><strong>Exemplo:</strong> Bash no Linux.</p>
+        </div>
+        <div class="term">
+            <h3>92. Framework</h3>
+            <p><strong>O que é:</strong> Estrutura pré-definida para desenvolvimento de aplicativos/sistemas.</p>
+            <p><strong>Exemplo:</strong> Django, React.</p>
+        </div>
+        <div class="term">
+            <h3>93. Modem</h3>
+            <p><strong>O que é:</strong> Dispositivo que conecta redes locais à internet.</p>
+            <p><strong>Exemplo:</strong> Modem de banda larga.</p>
+        </div>
+        <div class="term">
+            <h3>94. Padrão USB</h3>
+            <p><strong>O que é:</strong> Tecnologia para conexão e transferência de dados entre dispositivos.</p>
+            <p><strong>Exemplo:</strong> Pen drives, mouses e teclados.</p>
+        </div>
+        <div class="term">
+            <h3>95. Bitrate</h3>
+            <p><strong>O que é:</strong> Quantidade de dados por segundo em áudio ou vídeo.</p>
+            <p><strong>Exemplo:</strong> Vídeos de alta qualidade têm maior bitrate.</p>
+        </div>
+        <div class="term">
+            <h3>96. Stack</h3>
+            <p><strong>O que é:</strong> Conjunto de tecnologias usadas para criar aplicativos.</p>
+            <p><strong>Exemplo:</strong> MERN (MongoDB, Express, React, Node.js).</p>
+        </div>
+        <div class="term">
+            <h3>97. Latência de Disco</h3>
+            <p><strong>O que é:</strong> Tempo para acessar dados no disco.</p>
+            <p><strong>Exemplo:</strong> SSDs têm menor latência que HDDs.</p>
+        </div>
+        <div class="term">
+            <h3>98. Endereço MAC</h3>
+            <p><strong>O que é:</strong> Identificador único de dispositivos de rede.</p>
+            <p><strong>Exemplo:</strong> Wi-Fi do seu celular tem um MAC único.</p>
+        </div>
+        <div class="term">
+            <h3>99. Cluster</h3>
+            <p><strong>O que é:</strong> Conjunto de computadores que trabalham juntos como um só.</p>
+            <p><strong>Exemplo:</strong> Usado em data centers para alto desempenho.</p>
+        </div>
+        <div class="term">
+            <h3>100. Phablet</h3>
+            <p><strong>O que é:</strong> Dispositivo que combina smartphone e tablet.</p>
+            <p><strong>Exemplo:</strong> Galaxy Note.</p>
+        </div>
+        <div class="term">
+            <h3>101. Formatação</h3>
+            <p><strong>O que é:</strong> Processo de apagar e preparar um disco para uso.</p>
+            <p><strong>Exemplo:</strong> Formatar um pen drive.</p>
+        </div>
+        <div class="term">
+            <h3>102. Wearables</h3>
+            <p><strong>O que é:</strong> Dispositivos eletrônicos vestíveis.</p>
+            <p><strong>Exemplo:</strong> Smartwatches, pulseiras fitness.</p>
+        </div>
+        <div class="term">
+            <h3>103. Near Field Communication (NFC)</h3>
+            <p><strong>O que é:</strong> Tecnologia para troca de dados entre dispositivos próximos.</p>
+            <p><strong>Exemplo:</strong> Pagamento por aproximação em celulares.</p>
+        </div>
+        <div class="term">
+            <h3>104. Emulação</h3>
+            <p><strong>O que é:</strong> Imitar o comportamento de um sistema em outro.</p>
+            <p><strong>Exemplo:</strong> Emuladores de jogos retrô.</p>
+        </div>
+        <div class="term">
+            <h3>105. Overhead</h3>
+            <p><strong>O que é:</strong> Recursos adicionais necessários para executar uma tarefa.</p>
+            <p><strong>Exemplo:</strong> Software com overhead alto consome mais memória.</p>
+        </div>
+        <div class="term">
+            <h3>106. Render Farm</h3>
+            <p><strong>O que é:</strong> Conjunto de computadores para renderizar gráficos complexos.</p>
+            <p><strong>Exemplo:</strong> Usado em filmes de animação.</p>
+        </div>
+        <div class="term">
+            <h3>107. Deep Link</h3>
+            <p><strong>O que é:</strong> Link que leva diretamente a uma página ou seção específica.</p>
+            <p><strong>Exemplo:</strong> Links que abrem diretamente um produto em um app.</p>
+        </div>
+        <div class="term">
+            <h3>108. Git</h3>
+            <p><strong>O que é:</strong> Sistema de controle de versão para rastrear mudanças no código.</p>
+            <p><strong>Exemplo:</strong> GitHub usa Git.</p>
+        </div>
+        <div class="term">
+            <h3>109. LAMP</h3>
+            <p><strong>O que é:</strong> Conjunto de tecnologias: Linux, Apache, MySQL, PHP.</p>
+            <p><strong>Exemplo:</strong> Amplamente usado em servidores web.</p>
+        </div>
+        <div class="term">
+            <h3>110. Multithreading</h3>
+            <p><strong>O que é:</strong> Execução de várias tarefas simultâneas em um processador.</p>
+            <p><strong>Exemplo:</strong> Jogos utilizam multithreading para desempenho.</p>
+        </div>
+        <div class="term">
+            <h3>111. BIOS UEFI</h3>
+            <p><strong>O que é:</strong> Sucessor moderno do BIOS, mais rápido e com interface gráfica.</p>
+            <p><strong>Exemplo:</strong> PCs atuais usam UEFI.</p>
+        </div>
+        <div class="term">
+            <h3>112. RAID 0/1/5</h3>
+            <p><strong>O que é:</strong> Configurações RAID com diferentes combinações de desempenho e redundância.</p>
+            <p><strong>Exemplo:</strong> RAID 1 duplica dados.</p>
+        </div>
+        <div class="term">
+            <h3>113. Token NFT</h3>
+            <p><strong>O que é:</strong> Certificado digital único em blockchain.</p>
+            <p><strong>Exemplo:</strong> NFTs são usados em arte digital.</p>
+        </div>
+        <div class="term">
+            <h3>114. Hotfix</h3>
+            <p><strong>O que é:</strong> Atualização rápida para corrigir um problema crítico.</p>
+            <p><strong>Exemplo:</strong> Jogos lançam hotfixes para bugs.</p>
+        </div>
+        <div class="term">
+            <h3>115. IPv6</h3>
+            <p><strong>O que é:</strong> Nova versão do protocolo IP, com mais endereços que IPv4.</p>
+            <p><strong>Exemplo:</strong> Dispositivos modernos migram para IPv6.</p>
+        </div>
+        <div class="term">
+            <h3>116. Load Time</h3>
+            <p><strong>O que é:</strong> Tempo para carregar uma página ou app.</p>
+            <p><strong>Exemplo:</strong> Sites rápidos carregam em menos de 3 segundos.</p>
+        </div>
+        <div class="term">
+            <h3>117. Streaming</h3>
+            <p><strong>O que é:</strong> Transmissão de áudio/vídeo sem baixar.</p>
+            <p><strong>Exemplo:</strong> Netflix, Spotify.</p>
+        </div>
+        <div class="term">
+            <h3>118. Botnet</h3>
+            <p><strong>O que é:</strong> Rede de computadores infectados controlados por hackers.</p>
+            <p><strong>Exemplo:</strong> Usadas para ataques DDoS.</p>
+        </div>
+        <div class="term">
+            <h3>119. Análise Heurística</h3>
+            <p><strong>O que é:</strong> Método de segurança cibernética para detectar padrões suspeitos.</p>
+            <p><strong>Exemplo:</strong> Antivírus usam análise heurística.</p>
+        </div>
+        <div class="term">
+            <h3>120. DLL (Dynamic-Link Library)</h3>
+            <p><strong>O que é:</strong> Arquivos com código/dados usados por múltiplos programas no Windows.</p>
+            <p><strong>Exemplo:</strong> Arquivos .dll essenciais para aplicativos.</p>
+        </div>
+        <div class="term">
+            <h3>121. ASCII</h3>
+            <p><strong>O que é:</strong> Código padrão para representação de texto em computadores.</p>
+            <p><strong>Exemplo:</strong> "A" tem um código ASCII.</p>
+        </div>
+        <div class="term">
+            <h3>122. Hypervisor</h3>
+            <p><strong>O que é:</strong> Software/hardware que cria e gerencia máquinas virtuais.</p>
+            <p><strong>Exemplo:</strong> VMware, Hyper-V.</p>
+        </div>
+        <div class="term">
+            <h3>123. DNS Cache</h3>
+            <p><strong>O que é:</strong> Memória temporária de consultas DNS.</p>
+            <p><strong>Exemplo:</strong> Sites carregam mais rápido após a primeira visita.</p>
+        </div>
+        <div class="term">
+            <h3>124. Bloatware</h3>
+            <p><strong>O que é:</strong> Software pré-instalado desnecessário ou pesado.</p>
+            <p><strong>Exemplo:</strong> Apps pré-instalados em smartphones.</p>
+        </div>
+        <div class="term">
+            <h3>125. Dual-Boot</h3>
+            <p><strong>O que é:</strong> Ter dois sistemas operacionais no mesmo dispositivo.</p>
+            <p><strong>Exemplo:</strong> Windows e Linux no mesmo PC.</p>
+        </div>
+        <div class="term">
+            <h3>126. Zero-Day</h3>
+            <p><strong>O que é:</strong> Vulnerabilidade descoberta antes da correção.</p>
+            <p><strong>Exemplo:</strong> Hackers exploram falhas zero-day.</p>
+        </div>
+        <div class="term">
+            <h3>127. Mesh Network</h3>
+            <p><strong>O que é:</strong> Rede onde cada dispositivo conecta-se a outros, formando uma malha.</p>
+            <p><strong>Exemplo:</strong> Roteadores mesh em casas grandes.</p>
+        </div>
+        <div class="term">
+            <h3>128. TLD (Top-Level Domain)</h3>
+            <p><strong>O que é:</strong> Extensão no final de um domínio.</p>
+            <p><strong>Exemplo:</strong> .com, .org, .edu.</p>
+        </div>
+        <div class="term">
+            <h3>129. Virtual Private Cloud (VPC)</h3>
+            <p><strong>O que é:</strong> Ambiente isolado na nuvem.</p>
+            <p><strong>Exemplo:</strong> Usado para segurança na nuvem.</p>
+        </div>
+        <div class="term">
+            <h3>130. Packet Loss</h3>
+            <p><strong>O que é:</strong> Perda de pacotes de dados na transmissão.</p>
+            <p><strong>Exemplo:</strong> Pode causar falhas em chamadas de vídeo.</p>
+        </div>
+        <div class="term">
+            <h3>131. Load Testing</h3>
+            <p><strong>O que é:</strong> Testar desempenho do sistema sob carga pesada.</p>
+            <p><strong>Exemplo:</strong> Testes antes da Black Friday.</p>
+        </div>
+        <div class="term">
+            <h3>132. CAPTCHA</h3>
+            <p><strong>O que é:</strong> Teste para diferenciar humanos de bots.</p>
+            <p><strong>Exemplo:</strong> "Selecione todas as imagens com semáforos."</p>
+        </div>
+        <div class="term">
+            <h3>133. PoE (Power over Ethernet)</h3>
+            <p><strong>O que é:</strong> Alimentar dispositivos via cabo Ethernet.</p>
+            <p><strong>Exemplo:</strong> Câmeras IP usam PoE.</p>
+        </div>
+        <div class="term">
+            <h3>134. Metadata</h3>
+            <p><strong>O que é:</strong> Dados sobre dados.</p>
+            <p><strong>Exemplo:</strong> Fotos com localização e data.</p>
+        </div>
+        <div class="term">
+            <h3>135. SaaS (Software como Serviço)</h3>
+            <p><strong>O que é:</strong> Aplicações acessíveis pela internet, sem instalação local.</p>
+            <p><strong>Exemplo:</strong> Google Docs, Salesforce.</p>
+        </div>
+        <div class="term">
+            <h3>136. Singleton</h3>
+            <p><strong>O que é:</strong> Padrão de design que limita uma classe a uma única instância.</p>
+            <p><strong>Exemplo:</strong> Usado em gerenciadores de configuração.</p>
+        </div>
+        <div class="term">
+            <h3>137. Blockchain Explorer</h3>
+            <p><strong>O que é:</strong> Ferramenta para visualizar transações no blockchain.</p>
+            <p><strong>Exemplo:</strong> Exploradores de Bitcoin.</p>
+        </div>
+        <div class="term">
+            <h3>138. NAT (Network Address Translation)</h3>
+            <p><strong>O que é:</strong> Permite que vários dispositivos usem um só IP público.</p>
+            <p><strong>Exemplo:</strong> Roteadores domésticos usam NAT.</p>
+        </div>
+        <div class="term">
+            <h3>139. Payload</h3>
+            <p><strong>O que é:</strong> Dados transmitidos em um pacote de rede.</p>
+            <p><strong>Exemplo:</strong> Em ataques, o payload pode ser malware.</p>
+        </div>
+        <div class="term">
+            <h3>140. Quantum Computing</h3>
+            <p><strong>O que é:</strong> Computação usando princípios da física quântica.</p>
+            <p><strong>Exemplo:</strong> Google e IBM pesquisam computadores quânticos.</p>
+        </div>
+        <div class="term">
+            <h3>141. Cold Storage</h3>
+            <p><strong>O que é:</strong> Armazenamento offline para maior segurança.</p>
+            <p><strong>Exemplo:</strong> Carteiras físicas de Bitcoin.</p>
+        </div>
+        <div class="term">
+            <h3>142. Thin Client</h3>
+            <p><strong>O que é:</strong> Dispositivo leve que depende de servidores.</p>
+            <p><strong>Exemplo:</strong> Usado em call centers.</p>
+        </div>
+        <div class="term">
+            <h3>143. Codec</h3>
+            <p><strong>O que é:</strong> Codifica/decodifica áudio/vídeo.</p>
+            <p><strong>Exemplo:</strong> H.264, MP3.</p>
+        </div>
+        <div class="term">
+            <h3>144. Breadcrumb</h3>
+            <p><strong>O que é:</strong> Navegação hierárquica que mostra a localização do usuário.</p>
+            <p><strong>Exemplo:</strong> "Home &gt; Produtos &gt; Eletrônicos".</p>
+        </div>
+        <div class="term">
+            <h3>145. Garbage Collection</h3>
+            <p><strong>O que é:</strong> Liberação automática de memória não utilizada.</p>
+            <p><strong>Exemplo:</strong> Java usa garbage collection.</p>
+        </div>
+        <div class="term">
+            <h3>146. Web Scraping</h3>
+            <p><strong>O que é:</strong> Extrair dados de sites.</p>
+            <p><strong>Exemplo:</strong> Coletar preços de produtos online.</p>
+        </div>
+        <div class="term">
+            <h3>147. Heatmap</h3>
+            <p><strong>O que é:</strong> Visualização que mostra onde usuários clicam mais.</p>
+            <p><strong>Exemplo:</strong> Análise de comportamento em sites.</p>
+        </div>
+        <div class="term">
+            <h3>148. ASIC (Application-Specific Integrated Circuit)</h3>
+            <p><strong>O que é:</strong> Hardware especializado para uma tarefa específica.</p>
+            <p><strong>Exemplo:</strong> Usado em mineração de criptomoedas.</p>
+        </div>
+        <div class="term">
+            <h3>149. DPI Scaling</h3>
+            <p><strong>O que é:</strong> Ajuste de elementos gráficos para melhor legibilidade em alta resolução.</p>
+            <p><strong>Exemplo:</strong> Windows permite aumentar o tamanho das fontes.</p>
+        </div>
+        <div class="term">
+            <h3>150. Fog Computing</h3>
+            <p><strong>O que é:</strong> Extensão da nuvem que processa dados perto da origem.</p>
+            <p><strong>Exemplo:</strong> Carros autônomos processando dados localmente.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Dicionário Online de Tecnologia. Todos os direitos reservados.</p>
+    </footer>
+    <script>
+        const buttons = document.querySelectorAll('.tab-button');
+        const contents = document.querySelectorAll('.content');
+
+        buttons.forEach(button => {
+            button.addEventListener('click', () => {
+                buttons.forEach(btn => btn.classList.remove('active'));
+                contents.forEach(content => content.classList.remove('active'));
+
+                button.classList.add('active');
+                document.getElementById(button.dataset.tab).classList.add('active');
+            });
+        });
+    </script>
+</body>
+</html>
